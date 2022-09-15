@@ -1,55 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="refresh" content="240" >
+    <head>
+        <meta http-equiv="refresh" content="240" />
 
-	<title>Northern Hemisphere Aurora Data</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive-elements/1.0.2/responsive-elements.min.js" integrity="sha512-4EEhTgTsRNAlk47ymSP/SpkKMgK0/SgMCn63uVPAKm7ctnjkAz0bHFClzF2uzYrowq0C+TLRxnQwJcbYSFUssQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 81%, rgba(0,51,0,1) 91%, rgba(0,41,0,1) 97%, rgba(0,0,0,1) 100%);
-          color: #fff;
-          text-align: center;
-          font-family: 'Raleway', sans-serif;
-          letter-spacing: 3px;
-        }
+        <title>Northern Hemisphere Aurora Data</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/responsive-elements/1.0.2/responsive-elements.min.js"
+            integrity="sha512-4EEhTgTsRNAlk47ymSP/SpkKMgK0/SgMCn63uVPAKm7ctnjkAz0bHFClzF2uzYrowq0C+TLRxnQwJcbYSFUssQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                background: rgb(0, 0, 0);
+                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 81%, rgba(0, 51, 0, 1) 91%, rgba(0, 41, 0, 1) 97%, rgba(0, 0, 0, 1) 100%);
+                color: #fff;
+                text-align: center;
+                font-family: "Raleway", sans-serif;
+                letter-spacing: 3px;
+            }
 
+            .big {
+                font-size: 2.2em;
+                color: #0ecb0d;
+                font-family: "Raleway", sans-serif;
+            }
 
-        .big {
-          font-size: 2.2em;
-          color: #0ecb0d;
-          font-family: 'Raleway', sans-serif;
-        }
+            .small {
+                font-size: 0.7em;
+            }
 
-        .small {
-          font-size: .7em;
-        }
-
-
-
-
-    .responsive {
-            max-width: 100%;
-          height: auto;
-        }
-</style>
-
-  </head>
-  <body>
-    <!--<div class="container">test</div>-->
+            .responsive {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
         <h1>Data last refreshed at: {{ data[-1]["time_tag"] }} UTC</h1>
         <h2>Current KP index: {{ data[-1]["kp_index"] }}</h2>
-        <img class='responsive' src={{ image }}
-
-        <!-- {% for item in data %} -->
-        <!--    <li>{{item.time_tag}}</li>-->
-        <!--    <li>{{item.kp_index}}</li>-->
-        <!--    <br>-->
+        <img class="responsive" src="{{" image }} <!-- {% for item in data %} -- />
         <!--{% endfor %}-->
-  </body>
+    </body>
 </html>
